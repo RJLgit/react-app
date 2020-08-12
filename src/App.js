@@ -1,12 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AboutReact from './AboutReact.js'
 
 function App() {
   return (
-    <div className="App">
-      My app
-    </div>
+    <AboutReact />
   );
 }
 
