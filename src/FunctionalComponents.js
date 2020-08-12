@@ -11,7 +11,11 @@ class FunctionalComponents extends React.Component {
 
 
     handleChange() {
-
+        this.setState((prevState) => {
+            return {showMore: !prevState.showMore}
+        }
+    
+        )
     }
 
 
@@ -20,7 +24,7 @@ class FunctionalComponents extends React.Component {
        return (
            <div>
                <h1>About Functional Components</h1>
-            <button onClick={this.handleChange}>Show more</button> 
+            <button onClick={this.handleChange}>{this.state.showMore ? "Show Less" : "Show More"}</button> 
            </div>
        )
 }
