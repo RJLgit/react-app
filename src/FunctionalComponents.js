@@ -1,4 +1,5 @@
 import React from 'react';
+import Details from './Details.js'
 
 class FunctionalComponents extends React.Component {
     constructor() {
@@ -24,6 +25,7 @@ class FunctionalComponents extends React.Component {
        return (
            <div>
                <h1>About Functional Components</h1>
+               <Details show={this.state.showMore} />
             <button onClick={this.handleChange}>{this.state.showMore ? "Show Less" : "Show More"}</button> 
            </div>
        )
