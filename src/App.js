@@ -8,7 +8,12 @@ function App() {
   return (
     <div>
       <AboutReact />
-      <FunctionalComponents />
+      <FunctionalComponents title="About Functional Components"/>
+      <FunctionalComponents title="About Class Components"/>
+      <FunctionalComponents title="About Props"/>
+      <FunctionalComponents title="React state"/>
+      <FunctionalComponents title="Conditional rendering"/>
+      <FunctionalComponents title="React hooks"/>
     </div>
     
   );

@@ -24,7 +24,7 @@ class FunctionalComponents extends React.Component {
     render() {
        return (
            <div>
-               <h1>About Functional Components</h1>
+               <h1>{this.props.title}</h1>
                <Details show={this.state.showMore} />
             <button onClick={this.handleChange}>{this.state.showMore ? "Show Less" : "Show More"}</button> 
            </div>
