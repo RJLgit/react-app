@@ -3,11 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import AboutReact from './AboutReact.js'
 import FunctionalComponents from './FunctionalComponents';
+import Understood from './Understood';
 
 function App() {
   return (
     <div>
       <AboutReact />
+      <Understood />
       <FunctionalComponents title="About Functional Components"/>
       <FunctionalComponents title="About Class Components"/>
       <FunctionalComponents title="About Props"/>
