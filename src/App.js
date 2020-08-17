@@ -5,11 +5,20 @@ import AboutReact from './AboutReact.js'
 import FunctionalComponents from './FunctionalComponents';
 import Understood from './Understood';
 
-function App() {
-  return (
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      total: 6,
+      understood_total: 0
+    }
+  }
+
+  render() {
+   return (
     <div>
       <AboutReact />
-      <Understood />
+      <Understood total={this.state.total} understood_total={this.state.understood_total}/>
       <FunctionalComponents title="About Functional Components"/>
       <FunctionalComponents title="About Class Components"/>
       <FunctionalComponents title="About Props"/>
@@ -18,7 +27,9 @@ function App() {
       <FunctionalComponents title="React hooks"/>
     </div>
     
-  );
+  ); 
+  }
+  
 }
 
 export default App;

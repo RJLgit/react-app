@@ -12,7 +12,7 @@ class Understood extends React.Component {
     render() {
        return (
            <div>
-               <p>You understand: {this.state.total_understood} out of {this.state.total}</p>
+               <p>You understand: {this.props.understood_total} out of {this.props.total}</p>
            </div>
        )
 }
