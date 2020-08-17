@@ -10,7 +10,8 @@ class App extends React.Component {
     super();
     this.state = {
       total: 6,
-      understood_total: 0
+      understood_total: 0,
+      understand: [false, false, false, false, false, false]
     }
   }
 
@@ -19,7 +20,7 @@ class App extends React.Component {
     <div>
       <AboutReact />
       <Understood total={this.state.total} understood_total={this.state.understood_total}/>
-      <FunctionalComponents title="About Functional Components"/>
+      <FunctionalComponents title="About Functional Components" />
       <FunctionalComponents title="About Class Components"/>
       <FunctionalComponents title="About Props"/>
       <FunctionalComponents title="React state"/>
